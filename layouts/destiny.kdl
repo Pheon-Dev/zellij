@@ -1,0 +1,14 @@
+layout {
+  cwd "/home/pheon/Documents/NextJS/App/destiny-credit"
+  tab focus=true {
+    pane command="nvim"
+    }
+  tab split_direction="vertical" {
+    pane command="yarn" {
+        args "dev"
+      }
+    pane command="pscale" {
+        args "connect" "destiny-credit" "dev"
+      }
+  }
+}

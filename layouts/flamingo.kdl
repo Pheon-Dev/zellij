@@ -1,0 +1,4 @@
+layout {
+  cwd "/home/pheon/Documents/go/src/github.com/Pheon-Dev/flamingo"
+  pane command="nvim" close_on_exit=true
+}
