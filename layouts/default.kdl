@@ -1,5 +1,0 @@
-
-layout {
-  cwd "/home/pheon"
-  pane command="flamingo" close_on_exit=true
-}

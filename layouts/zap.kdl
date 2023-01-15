@@ -1,5 +1,5 @@
 layout {
-  cwd "/home/pheon/Documents/go/src/github.com/Pheon-Dev/flamingo"
+  cwd "/home/pheon/Documents/go/src/github.com/Pheon-Dev/zap"
 
   pane_template name="dev" {
       pane size=1 borderless=true {
@@ -17,7 +17,7 @@ layout {
         }
     }
 
-  code_tab name="code (flamingo)" focus=true {
+  code_tab name="code (zap)" focus=true {
       pane command="nvim"
     }
 }

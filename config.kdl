@@ -3,9 +3,12 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+        bind "Alt `" { ToggleFloatingPanes; SwitchToMode "Normal"; }
     }
     locked {
-        bind "Ctrl j" { SwitchToMode "Normal"; }
+        bind "Alt g" "Alt ;" { SwitchToMode "Normal"; }
+        bind "Alt q" { Quit; }
+        bind "Ctrl a" { SwitchToMode "Tmux"; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -112,11 +115,12 @@ keybinds {
     }
     tmux {
         bind "[" { SwitchToMode "Scroll"; }
-        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
-        bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "Ctrl a" { Write 2; SwitchToMode "Normal"; }
+        bind "h" { CloseFocus; SwitchToMode "Normal"; }
+        bind "j" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "k" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "l" { NewTab; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
-        bind "c" { NewTab; SwitchToMode "Normal"; }
         bind "," { SwitchToMode "RenameTab"; }
         bind "p" { GoToPreviousTab; SwitchToMode "Normal"; }
         bind "n" { GoToNextTab; SwitchToMode "Normal"; }
@@ -124,16 +128,17 @@ keybinds {
         bind "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
         bind "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
         bind "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
-        bind "h" { MoveFocus "Left"; SwitchToMode "Normal"; }
-        bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
-        bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
-        bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "Ctrl h" { MoveFocus "Left"; SwitchToMode "Normal"; }
+        bind "Ctrl l" { MoveFocus "Right"; SwitchToMode "Normal"; }
+        bind "Ctrl j" { MoveFocus "Down"; SwitchToMode "Normal"; }
+        bind "Ctrl k" { MoveFocus "Up"; SwitchToMode "Normal"; }
         bind "o" { FocusNextPane; }
         bind "d" { Detach; }
     }
     shared_except "locked" {
-        bind "Ctrl j" { SwitchToMode "Locked"; }
+        bind "Alt g" "Alt ;" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
+        bind "Alt q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
@@ -164,7 +169,7 @@ keybinds {
         bind "Ctrl h" { SwitchToMode "Move"; }
     }
     shared_except "tmux" "locked" {
-        bind "Ctrl b" { SwitchToMode "Tmux"; }
+        bind "Ctrl a" { SwitchToMode "Tmux"; }
     }
 }
 
@@ -201,6 +206,12 @@ default_shell "zsh"
 //   - false
 //
 pane_frames false
+
+ui {
+    pane_frames {
+        rounded_corners true
+    }
+}
 
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
@@ -250,7 +261,7 @@ theme "dracula"
 // Choose the mode that zellij uses when starting up.
 // Default: normal
 //
-// default_mode "locked"
+default_mode "locked"
 
 // Toggle enabling the mouse mode.
 // On certain configurations, or terminals this could
