@@ -1,5 +1,5 @@
 layout {
-  cwd "/home/pheon/Documents/go/src/github.com/Pheon-Dev/zap"
+  cwd "/home/pheon/.config/nvim"
 
   default_tab_template {
       pane size=1 borderless=true {
@@ -16,15 +16,13 @@ layout {
     }
 
   tab_template name="code_tab" {
-      dev split_direction="horizontal" {
+      dev split_direction="vertical" {
 				children
-					pane command="go" size="30%" {
-								args "run" "."
-						}
+				pane command="flamingo"
         }
     }
 
-  code_tab name="code (zap)" focus=true {
+  code_tab name="code (neovim)" focus=true {
       pane command="nvim"
     }
 }

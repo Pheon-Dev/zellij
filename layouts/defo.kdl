@@ -1,4 +1,4 @@
-layout name="destiny" {
+layout {
   cwd "/home/pheon/Documents/NextJS/App/destiny-credit"
   default_tab_template {
       pane size=1 borderless=true {
