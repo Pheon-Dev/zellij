@@ -4,11 +4,13 @@ keybinds {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
         bind "Alt `" { ToggleFloatingPanes; SwitchToMode "Normal"; }
+        bind "Alt d" { Detach; }
     }
     locked {
-        bind "Alt g" "Alt ;" { SwitchToMode "Normal"; }
+        bind "Alt g" "Alt b" { SwitchToMode "Normal"; }
         bind "Alt q" { Quit; }
         bind "Ctrl a" { SwitchToMode "Tmux"; }
+        bind "Alt d" { Detach; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -136,16 +138,16 @@ keybinds {
         bind "d" { Detach; }
     }
     shared_except "locked" {
-        bind "Alt g" "Alt ;" { SwitchToMode "Locked"; }
+        bind "Alt g" "Alt b" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt q" { Quit; }
-        bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
         bind "Alt j" "Alt Down" { MoveFocus "Down"; }
         bind "Alt k" "Alt Up" { MoveFocus "Up"; }
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
+        bind "Alt d" { Detach; }
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
@@ -245,6 +247,8 @@ themes {
         magenta "#fca7ea"
         cyan "#ff33a8"
         white "#44475a"
+        gray "#282a36"
+        silver "#282a36"
         orange "#ff9c33"
     }
 }
@@ -270,7 +274,7 @@ theme "dracula"
 //   - true (default)
 //   - false
 //
-// mouse_mode false
+mouse_mode false
 
 // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back

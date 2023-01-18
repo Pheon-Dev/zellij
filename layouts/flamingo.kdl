@@ -12,15 +12,20 @@ layout {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
-				children
+      children
     }
 
   tab_template name="code_tab" {
       dev split_direction="horizontal" {
-				children
-					pane command="go" size="30%" {
-								args "run" "."
-						}
+        dev split_direction="vertical" {
+          children
+          pane command="nvim" size="30%" cwd="/home/pheon/.config/flamingo" {
+                args "./config.yaml"
+            }
+          }
+        pane command="go" size="30%" {
+              args "run" "."
+          }
         }
     }
 
