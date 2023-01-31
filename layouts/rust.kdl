@@ -1,28 +1,27 @@
 layout {
-  cwd "/home/pheon/.config/nvim"
-
+  cwd "/home/pheon/Documents/Rust"
   default_tab_template {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
-        children
+      children
     }
 
   pane_template name="dev" {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
-				children
+      children
     }
 
   tab_template name="code_tab" {
-      dev split_direction="vertical" {
-				children
-				pane command="flamingo" name="flamingo"
-        }
+      children
     }
 
-  code_tab name="code (neovim)" focus=true {
-      pane command="nvim" name="neovim"
+  code_tab name="dev" focus=true {
+      pane size=1 borderless=true {
+          plugin location="zellij:compact-bar"
+        }
+      pane
     }
 }
