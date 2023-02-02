@@ -18,12 +18,13 @@ layout {
     }
 
   code_tab name="flamingo" focus=true {
-      pane size=1 borderless=true {
-          plugin location="zellij:compact-bar"
-        }
-      pane command="flamingo"
+      dev {
+        pane command="flamingo" borderless=true
+      }
     }
   code_tab name="micellaneous" {
-      dev
+      dev {
+        pane borderless=true
+      }
     }
 }

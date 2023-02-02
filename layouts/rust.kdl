@@ -18,10 +18,19 @@ layout {
       children
     }
 
-  code_tab name="dev" focus=true {
-      pane size=1 borderless=true {
-          plugin location="zellij:compact-bar"
-        }
-      pane
+  code_tab name="code (dev)" focus=true {
+      dev split_direction="vertical" {
+          pane borderless=true
+      }
+    }
+  code_tab name="rustlings" cwd="/home/pheon/Documents/Rust/rustlings" {
+      dev split_direction="vertical" {
+        pane command="nvim" borderless=true
+        pane split_direction="horizontal" {
+          pane command="rustlings" borderless=false {
+              args "watch"
+            }
+         }
+       }
     }
 }

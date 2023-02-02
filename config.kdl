@@ -207,7 +207,7 @@ default_shell "zsh"
 //   - true (default)
 //   - false
 //
-pane_frames false
+pane_frames true
 
 ui {
     pane_frames {

@@ -1,5 +1,6 @@
-layout name="destiny" {
-  cwd "/home/pheon/Documents/NextJS/App/destiny-credit"
+
+layout {
+  cwd "/home/pheon/Documents/NextJS/App/m-pesa"
 
   default_tab_template {
       pane size=1 borderless=true {
@@ -14,7 +15,7 @@ layout name="destiny" {
         }
     }
 
-  tab_template name="serve_tab" cwd="/home/pheon/Documents/NextJS/App/destiny-credit" {
+  tab_template name="serve_tab" cwd="/home/pheon/Documents/NextJS/App/m-pesa" {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
@@ -23,7 +24,7 @@ layout name="destiny" {
         }
     }
 
-  tab_template name="code_tab" cwd="/home/pheon/Documents/NextJS/App/destiny-credit" {
+  tab_template name="code_tab" cwd="/home/pheon/Documents/NextJS/App/m-pesa" {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
@@ -32,7 +33,7 @@ layout name="destiny" {
         }
     }
 
-  code_tab name="code (destiny-credit)" focus=true {
+  code_tab name="code (m-pesa)" focus=true {
       pane command="nvim" name="neovim" borderless=true
     }
 
@@ -42,12 +43,8 @@ layout name="destiny" {
             args "dev"
           }
         pane split_direction="horizontal" {
-          pane name="planet scale" command="pscale" {
-              args "connect" "destiny-credit" "dev"
-            }
-          pane name="prisma studio" size="30%" command="yarn" {
-              args "prisma" "studio"
-            }
+          pane name="one pane"
+          pane name="two pane"
          }
        }
    }

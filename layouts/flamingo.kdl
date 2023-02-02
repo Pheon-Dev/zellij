@@ -17,7 +17,7 @@ layout {
 
   tab_template name="code_tab" {
       dev split_direction="horizontal" {
-        dev split_direction="vertical" {
+        pane split_direction="vertical" {
           children
           pane command="nvim" size="30%" cwd="/home/pheon/.config/flamingo" {
                 args "./config.yaml"
