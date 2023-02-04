@@ -30,7 +30,32 @@ layout {
           pane command="rustlings" borderless=false {
               args "watch"
             }
-          pane size="36%" name="help info"
+          pane size="36%"
+         }
+       }
+    }
+  code_tab name="butterfly" cwd="/home/pheon/Documents/Rust/butterfly" {
+      dev split_direction="vertical" {
+        pane command="nvim" borderless=true
+        pane split_direction="horizontal" {
+          pane command="cargo-watch" borderless=false {
+              args "-x" "run"
+            }
+          pane size="36%"
+         }
+       }
+    }
+  code_tab name="book (cli)" cwd="/home/pheon/Documents/Rust/book" {
+      dev split_direction="vertical" {
+        pane split_direction="horizontal" {
+          pane command="nvim" borderless=true cwd="/home/pheon/Documents/Rust/book-cli"
+          pane borderless=false size="25%"  cwd="/home/pheon/Documents/Rust/book-cli"
+          }
+        pane split_direction="horizontal" {
+          pane command="glow" borderless=false size="25%" {
+              args "./src/SUMMARY.md"
+            }
+          pane cwd="/home/pheon/Documents/Rust/book/src" name="References"
          }
        }
     }
