@@ -30,6 +30,7 @@ layout {
           pane command="rustlings" borderless=false {
               args "watch"
             }
+          pane size="36%" name="help info"
          }
        }
     }

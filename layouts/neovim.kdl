@@ -16,13 +16,18 @@ layout {
     }
 
   tab_template name="code_tab" {
-      dev split_direction="vertical" {
-				children
-				pane command="flamingo" name="flamingo"
-        }
+      children
     }
 
   code_tab name="code (neovim)" focus=true {
-      pane command="nvim" name="neovim"
+      dev split_direction="vertical" {
+        pane command="nvim" name="neovim" borderless=true
+        pane command="flamingo" name="flamingo"
+      }
+    }
+  code_tab name="micellaneous" {
+      dev {
+        pane borderless=true
+      }
     }
 }
