@@ -25,6 +25,12 @@ layout {
         pane command="flamingo" name="flamingo"
       }
     }
+  code_tab name="contribution (lir)" {
+      dev split_direction="vertical" {
+        pane command="nvim" name="neovim" borderless=true cwd="/home/pheon/.local/share/nvim/lazy/lir.nvim"
+        pane command="flamingo" name="flamingo"
+      }
+    }
   code_tab name="micellaneous" {
       dev {
         pane borderless=true

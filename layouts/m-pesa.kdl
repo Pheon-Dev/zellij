@@ -43,8 +43,8 @@ layout {
             args "dev"
           }
         pane split_direction="horizontal" {
-          pane name="one pane"
-          pane name="two pane"
+          pane name="others"
+          // pane name="two pane"
          }
        }
    }
