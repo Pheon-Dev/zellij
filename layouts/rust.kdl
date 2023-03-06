@@ -23,6 +23,7 @@ layout {
           pane borderless=true
       }
     }
+
   code_tab name="rustlings" cwd="/home/pheon/Documents/Rust/rustlings" {
       dev split_direction="vertical" {
         pane command="nvim" borderless=true
@@ -34,6 +35,7 @@ layout {
          }
        }
     }
+
   code_tab name="m-pesa (api)" cwd="/home/pheon/Documents/Rust/mpesa-api" {
       dev split_direction="vertical" {
         pane command="nvim" borderless=true
@@ -49,9 +51,10 @@ layout {
       dev split_direction="vertical" {
         pane command="nvim" borderless=true
         pane size="36%" split_direction="horizontal" {
-          pane command="cargo-watch" borderless=false {
-              args "-x" "run"
-            }
+          // pane command="cargo-watch" borderless=false {
+            //   args "-x" "run"
+            // }
+          pane
           pane size="36%"
          }
        }
