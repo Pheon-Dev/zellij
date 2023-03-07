@@ -1,17 +1,17 @@
 layout {
   cwd "/home/pheon/Documents/Rust"
   default_tab_template {
-      children
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
+      children
     }
 
   pane_template name="dev" {
-      children
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
+      children
     }
 
   tab_template name="code_tab" {

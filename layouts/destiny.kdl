@@ -2,10 +2,10 @@ layout name="destiny" {
   cwd "/home/pheon/Documents/NextJS/App/destiny-credit"
 
   default_tab_template {
-      children
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
+      children
     }
 
   pane_template name="dev" {
@@ -15,20 +15,20 @@ layout name="destiny" {
     }
 
   tab_template name="serve_tab" cwd="/home/pheon/Documents/NextJS/App/destiny-credit" {
-      pane split_direction="vertical" {
-          children
-        }
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
+        }
+      pane split_direction="vertical" {
+          children
         }
     }
 
   tab_template name="code_tab" cwd="/home/pheon/Documents/NextJS/App/destiny-credit" {
-      pane split_direction="vertical" {
-          children
-        }
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
+        }
+      pane split_direction="vertical" {
+          children
         }
     }
 
