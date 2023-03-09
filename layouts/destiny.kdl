@@ -5,7 +5,6 @@ layout name="destiny" {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
-      children
     }
 
   pane_template name="dev" {

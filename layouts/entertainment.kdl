@@ -4,7 +4,6 @@ layout name="entertainment" {
           plugin location="zellij:compact-bar"
         }
       // pane size=2 borderless=true {
-      children
       //     plugin location="zellij:status-bar"
       //   }
     }
@@ -34,4 +33,31 @@ layout name="entertainment" {
         pane
       }
     }
+    // swap_tiled_layout name="h2v" {
+    //     tab max_panes=2 {
+    //         pane
+    //         pane
+    //     }
+    //     tab {
+    //         pane split_direction="vertical" {
+    //             pane
+    //             pane
+    //             pane
+    //         }
+    //     }
+    // }
+    // swap_floating_layout {
+    //     floating_panes max_panes=1 {
+    //         pane
+    //     }
+    //     floating_panes max_panes=2 {
+    //         pane x=0
+    //         pane x="50%"
+    //     }
+    //     floating_panes max_panes=3 {
+    //         pane x=0 width="25%"
+    //         pane x="25%" width="25%"
+    //         pane x="50%"
+    //     }
+    // }
 }

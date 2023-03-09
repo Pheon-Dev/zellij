@@ -5,12 +5,12 @@ keybinds {
         // bind "Alt c" { Copy; }
         bind "Alt `" { ToggleFloatingPanes; SwitchToMode "Normal"; }
         bind "Alt d" { Detach; }
+        bind "Alt q" { Quit; }
+        bind "Alt [" { PreviousSwapLayout; }
+        bind "Alt ]" { NextSwapLayout; }
     }
     locked {
-        bind "Alt g" "Alt b" { SwitchToMode "Normal"; }
-        bind "Alt q" { Quit; }
-        bind "Ctrl a" { SwitchToMode "Tmux"; }
-        bind "Alt d" { Detach; }
+        bind "Alt g" { SwitchToMode "Normal"; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -117,7 +117,7 @@ keybinds {
     }
     tmux {
         bind "[" { SwitchToMode "Scroll"; }
-        bind "Ctrl a" { Write 2; SwitchToMode "Normal"; }
+        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
         bind "h" { CloseFocus; SwitchToMode "Normal"; }
         bind "j" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "k" { NewPane "Down"; SwitchToMode "Normal"; }
@@ -138,7 +138,7 @@ keybinds {
         bind "d" { Detach; }
     }
     shared_except "locked" {
-        bind "Alt g" "Alt b" { SwitchToMode "Locked"; }
+        bind "Alt g" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt q" { Quit; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
@@ -148,6 +148,11 @@ keybinds {
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt d" { Detach; }
+        bind "Alt v" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "Alt b" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "Ctrl a" { NewTab; SwitchToMode "Normal"; }
+        bind "Alt [" { PreviousSwapLayout; }
+        bind "Alt ]" { NextSwapLayout; }
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
@@ -171,7 +176,7 @@ keybinds {
         bind "Ctrl h" { SwitchToMode "Move"; }
     }
     shared_except "tmux" "locked" {
-        bind "Ctrl a" { SwitchToMode "Tmux"; }
+        bind "Ctrl b" { SwitchToMode "Tmux"; }
     }
 }
 

@@ -3,7 +3,7 @@ layout name="general" {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
-      children
+      pane borderless=true
     }
 
   pane_template name="dev" {
