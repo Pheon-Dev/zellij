@@ -5,6 +5,7 @@ layout {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
+      pane borderless=true
     }
 
   pane_template name="dev" {
@@ -18,7 +19,7 @@ layout {
       children
     }
 
-  code_tab name="code (flamingo)" focus=true {
+  code_tab name="zellij" focus=true {
       pane command="nvim"
     }
 }
