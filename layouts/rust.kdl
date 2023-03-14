@@ -21,6 +21,7 @@ layout {
   code_tab name="code (dev)" focus=true {
       dev split_direction="vertical" {
           pane borderless=true
+          pane
       }
     }
 

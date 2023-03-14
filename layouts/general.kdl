@@ -1,4 +1,6 @@
 layout name="general" {
+  cwd "/home/pheon"
+
   default_tab_template {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
@@ -18,10 +20,19 @@ layout name="general" {
     }
 
   code_tab name="flamingo" focus=true {
-      dev {
-        pane command="flamingo" borderless=true
+      dev split_direction="vertical" {
+        pane command="flamingo" name="flamingo" borderless=true
+        pane
       }
     }
+
+  // code_tab name="miscellaneous" {
+  //     dev split_direction="vertical" {
+  //       pane borderless=true
+  //       pane
+  //     }
+  //   }
+
   code_tab name="micellaneous" {
       dev {
         pane borderless=true
