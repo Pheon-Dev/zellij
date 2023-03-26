@@ -1,6 +1,6 @@
 
 layout {
-  cwd "/home/pheon/Documents/packages/m-pesa"
+  cwd "/home/pheon/Documents/Rust/m-pesa"
 
   default_tab_template {
       pane size=1 borderless=true {
@@ -26,14 +26,21 @@ layout {
 
   code_tab name="m-pesa (pkg)" focus=true {
       dev split_direction="vertical" {
-        pane command="nvim" cwd="/home/pheon/Documents/packages/m-pesa/packages/m-pesa" borderless=true
-        pane command="nvim" cwd="/home/pheon/Documents/packages/m-pesa/apps/finance"
-        child size="26%" split_direction="horizontal" cwd="/home/pheon/Documents/packages/m-pesa/packages/m-pesa" {
-          pane name="yarn dev" command="yarn" cwd="/home/pheon/Documents/packages/m-pesa" {
-              args "dev"
-            }
-          pane size="36%" cwd="/home/pheon/Documents/packages/m-pesa/packages/m-pesa"
-       }
+          pane borderless=true
+          pane
+        // child size="26%" split_direction="horizontal" {
+        //   pane
+        //   pane size="36%"
+        //  }
+
+        // pane command="nvim" cwd="/home/pheon/Documents/packages/m-pesa/packages/m-pesa" borderless=true
+        // pane command="nvim" cwd="/home/pheon/Documents/packages/m-pesa/apps/finance"
+        // child size="26%" split_direction="horizontal" cwd="/home/pheon/Documents/packages/m-pesa/packages/m-pesa" {
+        //   pane name="yarn dev" command="yarn" cwd="/home/pheon/Documents/packages/m-pesa" {
+        //       args "dev"
+        //     }
+        //   pane size="36%" cwd="/home/pheon/Documents/packages/m-pesa/packages/m-pesa"
+        //  }
        }
     }
 

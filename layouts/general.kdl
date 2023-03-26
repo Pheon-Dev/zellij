@@ -34,7 +34,7 @@ layout name="general" {
   //   }
 
   code_tab name="micellaneous" {
-      dev {
+      dev split_direction="vertical" {
         pane borderless=true
       }
     }
