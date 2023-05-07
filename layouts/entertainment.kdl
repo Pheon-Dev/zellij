@@ -19,13 +19,15 @@ layout name="entertainment" {
     }
 
   code_tab name="watch" focus=true {
-      dev split_direction="vertical" {
+      dev split_direction="horizontal" {
         pane borderless=true
+        pane
       }
     }
   code_tab name="listen" {
       dev split_direction="vertical" {
         pane borderless=true
+        pane
       }
     }
   code_tab name="download" {
