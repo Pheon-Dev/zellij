@@ -23,14 +23,14 @@ layout name="manta" {
       children
     }
 
-  code_tab name="manta (pkg)" focus=true {
+  code_tab name="manta (dev)" focus=true {
       dev split_direction="vertical" {
           pane borderless=true
           pane
        }
     }
 
-  code_tab name="reference" cwd="/home/pheon/Documents/packages/manta" {
+  code_tab name="reference" cwd="/home/pheon/Documents/Rust" {
     dev split_direction="vertical" borderless=false {
       pane 
       pane split_direction="horizontal" {
