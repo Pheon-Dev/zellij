@@ -25,8 +25,17 @@ layout name="manta" {
 
   code_tab name="manta (dev)" focus=true {
       dev split_direction="vertical" {
-          pane borderless=true
-          pane
+          pane split_direction="horizontal" size="60%" {
+              pane borderless=true
+              pane size="28%" split_direction="vertical" {
+                  pane
+                  pane
+              }
+           }
+          pane split_direction="horizontal" {
+              pane name="ref" cwd="/home/pheon/Documents/Rust/rust-axum-course"
+              pane size="28%" name="tst"
+           }
        }
     }
 
