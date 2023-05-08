@@ -34,7 +34,7 @@ layout name="manta" {
            }
           pane split_direction="horizontal" {
               pane name="ref" cwd="/home/pheon/Documents/Rust/rust-axum-course"
-              pane size="28%" name="tst"
+              pane size="40%"
            }
        }
     }
