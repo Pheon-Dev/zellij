@@ -23,7 +23,7 @@ layout name="manta" {
       children
     }
 
-  code_tab name="manta (dev)" focus=true {
+  code_tab name="manta (api)" focus=true {
       dev split_direction="vertical" {
           pane split_direction="horizontal" size="60%" {
               pane borderless=true
@@ -39,9 +39,9 @@ layout name="manta" {
        }
     }
 
-  code_tab name="reference" cwd="/home/pheon/Documents/Rust" {
+  code_tab name="manta (wallet)" cwd="/home/pheon/Documents/Rust" {
     dev split_direction="vertical" borderless=false {
-      pane 
+      pane borderless=true
       pane split_direction="horizontal" {
           pane 
           pane size="36%"
@@ -49,7 +49,7 @@ layout name="manta" {
      }
     }
 
-  code_tab name="micellaneous" {
+  code_tab name="reference" {
       dev {
         pane borderless=true
       }

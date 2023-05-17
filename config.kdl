@@ -4,6 +4,7 @@ keybinds {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
         bind "Alt `" { ToggleFloatingPanes; SwitchToMode "Normal"; }
+        bind "Alt a" { NewTab; SwitchToMode "Normal"; }
         bind "Alt d" { Detach; }
         bind "Alt q" { Quit; }
         bind "Alt [" { PreviousSwapLayout; }
@@ -150,7 +151,7 @@ keybinds {
         bind "Alt d" { Detach; }
         bind "Alt v" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "Alt b" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "Alt n" { NewTab; SwitchToMode "Normal"; }
+        bind "Alt a" { NewTab; SwitchToMode "Normal"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
     }
