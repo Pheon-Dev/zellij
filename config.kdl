@@ -150,7 +150,7 @@ keybinds {
         bind "Alt d" { Detach; }
         bind "Alt v" { NewPane "Right"; SwitchToMode "Normal"; }
         bind "Alt b" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "Ctrl a" { NewTab; SwitchToMode "Normal"; }
+        bind "Alt n" { NewTab; SwitchToMode "Normal"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
     }

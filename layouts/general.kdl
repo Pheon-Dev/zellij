@@ -19,21 +19,32 @@ layout name="general" {
       children
     }
 
-  code_tab name="flamingo" focus=true {
+  code_tab name="neon" focus=true {
       dev split_direction="vertical" {
-        pane command="flamingo" name="flamingo" borderless=true
+        pane borderless=true
         pane
       }
     }
 
-  // code_tab name="miscellaneous" {
-  //     dev split_direction="vertical" {
-  //       pane borderless=true
-  //       pane
-  //     }
-  //   }
+  code_tab name="helium" {
+      dev split_direction="vertical" {
+        pane borderless=true
+      }
+    }
 
-  code_tab name="micellaneous" {
+  code_tab name="krypton" {
+      dev split_direction="vertical" {
+        pane borderless=true
+      }
+    }
+
+  code_tab name="radon" {
+      dev split_direction="vertical" {
+        pane borderless=true
+      }
+    }
+
+  code_tab name="argon" {
       dev split_direction="vertical" {
         pane borderless=true
       }
