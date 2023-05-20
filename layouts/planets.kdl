@@ -1,4 +1,4 @@
-layout name="inert" {
+layout name="planets" {
   cwd "/home/pheon"
 
   default_tab_template {
@@ -19,39 +19,66 @@ layout name="inert" {
       children
     }
 
-  code_tab name="neon" focus=true {
+  code_tab name="mercury" focus=true {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
 
-  code_tab name="helium" {
+  code_tab name="venus" {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
 
-  code_tab name="krypton" {
+  code_tab name="earth" {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
 
-  code_tab name="radon" {
+  code_tab name="mars" {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
 
-  code_tab name="argon" {
+  code_tab name="jupiter" {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
 
+  code_tab name="saturn" {
+      dev split_direction="vertical" {
+        pane borderless=true
+        pane
+      }
+    }
+
+  code_tab name="uranus" {
+      dev split_direction="vertical" {
+        pane borderless=true
+        pane
+      }
+    }
+
+  code_tab name="neptune" {
+      dev split_direction="vertical" {
+        pane borderless=true
+        pane
+      }
+    }
+
+  code_tab name="pluto" {
+      dev split_direction="vertical" {
+        pane borderless=true
+        pane
+      }
+    }
 }

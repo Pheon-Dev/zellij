@@ -1,4 +1,4 @@
-layout name="inert" {
+layout name="elements" {
   cwd "/home/pheon"
 
   default_tab_template {
@@ -19,39 +19,31 @@ layout name="inert" {
       children
     }
 
-  code_tab name="neon" focus=true {
+  code_tab name="plutonium" {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
 
-  code_tab name="helium" {
+  code_tab name="titanium" {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
 
-  code_tab name="krypton" {
+  code_tab name="thorium" {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
 
-  code_tab name="radon" {
+  code_tab name="uranium" {
       dev split_direction="vertical" {
         pane borderless=true
         pane
       }
     }
-
-  code_tab name="argon" {
-      dev split_direction="vertical" {
-        pane borderless=true
-        pane
-      }
-    }
-
 }
