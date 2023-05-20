@@ -39,19 +39,23 @@ layout name="manta" {
        }
     }
 
-  code_tab name="manta (wallet)" cwd="/home/pheon/Documents/Rust" {
+  code_tab name="manta (wallet)" cwd="/home/pheon/Documents/Rust/manta-wallet" {
     dev split_direction="vertical" borderless=false {
-      pane borderless=true
-      pane split_direction="horizontal" {
-          pane 
-          pane size="36%"
+          pane split_direction="horizontal" size="50%" {
+              pane borderless=true
+              pane size="28%"
+           }
+          pane split_direction="horizontal" size="50%" {
+              pane
+              pane size="28%"
+           }
        }
-     }
     }
 
   code_tab name="reference" {
-      dev {
+      dev split_direction="vertical" {
         pane borderless=true
+        pane
       }
     }
 }

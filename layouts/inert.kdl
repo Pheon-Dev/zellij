@@ -1,4 +1,4 @@
-layout name="general" {
+layout name="inert" {
   cwd "/home/pheon"
 
   default_tab_template {
@@ -29,24 +29,28 @@ layout name="general" {
   code_tab name="helium" {
       dev split_direction="vertical" {
         pane borderless=true
+        pane
       }
     }
 
   code_tab name="krypton" {
       dev split_direction="vertical" {
         pane borderless=true
+        pane
       }
     }
 
   code_tab name="radon" {
       dev split_direction="vertical" {
         pane borderless=true
+        pane
       }
     }
 
   code_tab name="argon" {
       dev split_direction="vertical" {
         pane borderless=true
+        pane
       }
     }
 }
