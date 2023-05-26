@@ -3,6 +3,7 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+        bind "Alt '" { TogglePaneFrames; SwitchToMode "Normal"; }
         bind "Alt ;" { SwitchToMode "Locked"; }
         bind "Alt `" { ToggleFloatingPanes; SwitchToMode "Normal"; }
         bind "Alt a" { NewTab; SwitchToMode "Normal"; }
