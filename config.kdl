@@ -3,6 +3,7 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+        bind "Alt ;" { SwitchToMode "Locked"; }
         bind "Alt `" { ToggleFloatingPanes; SwitchToMode "Normal"; }
         bind "Alt a" { NewTab; SwitchToMode "Normal"; }
         bind "Alt d" { Detach; }
@@ -12,6 +13,7 @@ keybinds {
     }
     locked {
         bind "Alt g" { SwitchToMode "Normal"; }
+        bind "Alt ;" { SwitchToMode "Normal"; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -140,6 +142,7 @@ keybinds {
     }
     shared_except "locked" {
         bind "Alt g" { SwitchToMode "Locked"; }
+        bind "Alt ;" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt q" { Quit; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
@@ -214,10 +217,12 @@ default_shell "zsh"
 //   - false
 //
 pane_frames true
+// auto_layout true
 
 ui {
     pane_frames {
         rounded_corners true
+        hide_session_name true
     }
 }
 
