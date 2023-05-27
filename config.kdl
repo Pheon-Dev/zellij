@@ -230,7 +230,7 @@ ui {
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
-//
+
 // themes {
 //     dracula {
 //         fg 248 248 242
@@ -248,25 +248,27 @@ ui {
 // }
 
 themes {
-    dracula {
-        fg "#44475a"
-        bg "#21222c"
-        black "#21222c"
-        red "#f7768e"
-        green "#d484ff"
-        yellow "#ff33a8"
-        blue "#8aa2f7"
-        magenta "#fca7ea"
-        cyan "#ff33a8"
-        white "#44475a"
-        gray "#282a36"
-        silver "#282a36"
-        orange "#ff9c33"
-    }
+  dracula {
+      fg "#44475a"
+      bg "#21222c"
+      black "#21222c"
+      red "#f7768e"
+      green "#545c7e"
+      // green "#d484ff"
+      yellow "#ff33a8"
+      blue "#8aa2f7"
+      magenta "#fca7ea"
+      cyan "#ff33a8"
+      white "#44475a"
+      gray "#282a36"
+      silver "#282a36"
+      orange "#ff9c33"
+  }
 }
+
 // Choose the theme that is specified in the themes section.
 // Default: default
-//
+
 theme "dracula"
 
 // The name of the default layout to load on startup
