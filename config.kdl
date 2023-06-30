@@ -10,10 +10,11 @@ keybinds clear-defaults=true {
         bind "Alt q" { Quit; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
-        bind "Alt ;" { Run "lf"; }
-        bind "Alt b" { Run "btop"; }
+        bind "Alt f" { Run "flamingo";TogglePaneEmbedOrFloating; }
+        bind "Alt ;" { Run "lf"; TogglePaneEmbedOrFloating; }
+        bind "Alt b" { Run "btop";TogglePaneEmbedOrFloating; }
         bind "Alt e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
-        bind "Alt z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+        bind "Alt z" { ToggleFocusFullscreen; TogglePaneFrames; SwitchToMode "Normal"; }
     }
     locked {
         bind "Alt g" { SwitchToMode "Normal"; }
@@ -163,7 +164,7 @@ keybinds clear-defaults=true {
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt d" { Detach; }
-        bind "Alt v" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "Alt v" { NewPane "Right"; SwitchToMode "Normal"; TogglePaneFrames; }
         bind "Alt b" { NewPane "Down"; SwitchToMode "Normal"; }
         bind "Alt a" { NewTab; SwitchToMode "Normal"; }
         bind "Alt [" { PreviousSwapLayout; }
