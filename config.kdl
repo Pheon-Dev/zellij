@@ -3,16 +3,16 @@ keybinds clear-defaults=true {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
-        bind "Alt '" { TogglePaneFrames; SwitchToMode "Normal"; }
+        bind "Alt f" { TogglePaneFrames; SwitchToMode "Normal"; }
         bind "Alt `" { ToggleFloatingPanes; SwitchToMode "Normal"; }
         bind "Alt a" { NewTab; SwitchToMode "Normal"; }
+        bind "Alt ," { NewPane; SwitchToMode "Normal"; }
         bind "Alt d" { Detach; }
         bind "Alt q" { Quit; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
-        bind "Alt f" { Run "flamingo";TogglePaneEmbedOrFloating; }
-        bind "Alt ;" { Run "lf"; TogglePaneEmbedOrFloating; }
-        bind "Alt b" { Run "btop";TogglePaneEmbedOrFloating; }
+        bind "Alt '" { Run "flamingo";TogglePaneEmbedOrFloating; }
+        bind "Alt ;" { Run "lf"; }
         bind "Alt e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }
         bind "Alt z" { ToggleFocusFullscreen; TogglePaneFrames; SwitchToMode "Normal"; }
     }
