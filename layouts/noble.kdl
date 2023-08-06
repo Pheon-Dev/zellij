@@ -8,9 +8,6 @@ layout name="noble" {
         }
         pane split_direction="horizontal" {
           pane stacked=true {
-            pane name="lf" command="bash" {
-              args "-c" "lf"
-            }
             pane
             pane
             pane
@@ -20,7 +17,11 @@ layout name="noble" {
       pane size=1 borderless=true {
           plugin location="zellij:compact-bar"
         }
+    floating_panes {
+      pane command="lf"
     }
+    }
+
 
   // tab name="krypton" focus=true {
   //   pane split_direction="vertical" {
