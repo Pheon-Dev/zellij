@@ -1,0 +1,20 @@
+layout name="config" {
+  tab focus=true {
+    pane split_direction="vertical" {
+        pane borderless=true command="bash" name="find file | folder" {
+          args "-c" "fd --type directory -HE='{$IGNORE}' --strip-cwd-prefix --follow | fzf --bind 'ctrl-l:execute(cd {} 2>/dev/null && nvim --listen ~/.cache/nvim/server.pipe || nvim --server ~/.cache/nvim/server.pipe --remote ~/{})'"
+        }
+        pane split_direction="horizontal" {
+          pane stacked=true {
+            pane
+            pane
+            pane
+          }
+        }
+      }
+      pane size=1 borderless=true {
+          plugin location="zellij:compact-bar"
+        }
+    }
+}
+
