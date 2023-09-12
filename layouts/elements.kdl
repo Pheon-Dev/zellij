@@ -1,0 +1,55 @@
+layout name="elements" {
+  cwd "/home/pheon-dev"
+
+  tab_template name="metal_tab" {
+    children
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+      }
+  }
+
+  metal_tab name="beryllium" focus=true {
+    pane split_direction="vertical" {
+        pane borderless=true command="bash" {
+          args "-c" "fd --type directory -HE='{.cache,.cargo,node_modules,Videos,Music,.nvm,.hyprland,Pictures,.gitmoji,.git,.vercel,.next,target,.yarn,$IGNORE}' --strip-cwd-prefix --follow | fzf --bind 'ctrl-l:execute(cd {} 2>/dev/null && nvim --listen ~/.cache/nvim/server.pipe || nvim --server ~/.cache/nvim/server.pipe --remote ~/{})'"
+        }
+        pane split_direction="horizontal" {
+          pane stacked=true {
+            pane
+            pane
+          }
+        }
+      }
+     floating_panes {
+       pane command="lf"
+     }
+  }
+  metal_tab name="plutonium" {
+      pane split_direction="vertical" {
+        pane borderless=true
+        pane
+      }
+    }
+
+  metal_tab name="titanium" {
+      pane split_direction="vertical" {
+        pane borderless=true
+        pane
+      }
+    }
+
+  metal_tab name="thorium" {
+      pane split_direction="vertical" {
+        pane borderless=true
+        pane
+      }
+    }
+
+  metal_tab name="uranium" {
+      pane split_direction="vertical" {
+        pane borderless=true
+        pane
+      }
+    }
+
+}
