@@ -1,0 +1,55 @@
+layout name="marvel-cloud" {
+  cwd "/home/pheon-dev/Documents/next/marvel-cloud/"
+
+  tab_template name="marvel_tab" {
+    children
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+      }
+  }
+
+  marvel_tab name="thor" focus=true {
+    pane split_direction="vertical" {
+        pane borderless=true command="nvim"
+        pane split_direction="horizontal" {
+          pane stacked=true {
+            pane
+            pane
+            pane
+            pane
+          }
+        }
+      }
+    floating_panes {
+      pane command="lf"
+    }
+    }
+
+
+  marvel_tab name="spider-man" {
+    pane split_direction="vertical" {
+        pane borderless=true
+        pane split_direction="horizontal" {
+          pane stacked=true {
+            pane
+            pane
+            pane
+          }
+        }
+      }
+    }
+
+  marvel_tab name="super-man" {
+    pane split_direction="vertical" {
+        pane borderless=true
+        pane split_direction="horizontal" {
+          pane stacked=true {
+            pane
+            pane
+            pane
+          }
+        }
+      }
+    }
+}
+
