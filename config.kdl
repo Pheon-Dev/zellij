@@ -172,7 +172,7 @@ keybinds clear-defaults=true {
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
         bind "Alt y" {
-            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/harpoon/target/wasm32-wasi/release/harpoon.wasm" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/harpoon.wasm" {
             floating true;
             move_to_focused_tab true;
           }

@@ -4,7 +4,7 @@ layout name="elements" {
   tab_template name="metal_tab" {
     children
     pane size=1 borderless=true {
-        plugin location="file:~/.config/zellij/plugins/zjstatus/target/wasm32-wasi/debug/zjstatus.wasm" {
+        plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
         format_left  "{mode} #[bg=#1e1e2e,fg=#82aaff,bold] ⟪ {session} ⟫ {tabs}"
         format_right "{datetime}"
         format_space ""
