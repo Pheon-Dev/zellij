@@ -154,6 +154,8 @@ keybinds clear-defaults=true {
         bind "d" { Detach; }
     }
     shared_except "locked" {
+        bind "Alt N" { GoToPreviousTab; SwitchToMode "Normal"; }
+        bind "Alt M" { GoToNextTab; SwitchToMode "Normal"; }
         bind "Alt g" { SwitchToMode "Locked"; }
         bind "Alt q" { Quit; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
@@ -169,6 +171,18 @@ keybinds clear-defaults=true {
         bind "Alt ," { NewTab; SwitchToMode "Normal"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
+        bind "Alt y" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/harpoon/target/wasm32-wasi/release/harpoon.wasm" {
+            floating true;
+            move_to_focused_tab true;
+          }
+        }
+        bind "Alt w" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
+            ignore_case true
+            floating true
+          }
+        }
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
