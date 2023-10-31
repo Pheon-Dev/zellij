@@ -5,7 +5,7 @@ layout name="elements" {
     children
     pane size=1 borderless=true {
         plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-        format_left  "{mode} #[bg=#1e1e2e,fg=#82aaff,bold] ⟪ {session} ⟫ {tabs}"
+        format_left  "{mode} #[bg=#1e1e2e,fg=#82aaff,bold]⟪{session}⟫ {tabs}"
         format_right "{datetime}"
         format_space ""
 
@@ -25,15 +25,15 @@ layout name="elements" {
         mode_prompt        "#[bg=#24273a] {name}"
         mode_tmux          "#[bg=#24273a] {name}"
 
-        tab_normal              "#[fg=#6C7086]  {index} {name} "
-        tab_normal_fullscreen   "#[fg=#6C7086]  {index} {name}  "
-        tab_normal_sync         "#[fg=#6C7086]  {index} {name}  "
+        tab_normal              "#[fg=#585b70]  {index} {name} "
+        tab_normal_fullscreen   "#[fg=#585b70]  {index} {name}  "
+        tab_normal_sync         "#[fg=#585b70]  {index} {name}  "
 
         tab_active              "#[fg=#e0d8f4,bg=#24273a,bold,italic] {name} "
         tab_active_fullscreen   "#[fg=#e0d8f4,bold,italic] {name}  "
         tab_active_sync         "#[fg=#e0d8f4,bold,italic] {name}  "
 
-        datetime        "#[fg=#6C7086,bold] {format} "
+        datetime        "#[fg=#585b70,bold] {format} "
         datetime_format "%A, %d %b %Y %H:%M"
         datetime_timezone "Africa/Nairobi"
       }
